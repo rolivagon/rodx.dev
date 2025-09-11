@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Rodrigo Oliva - Indie Mobile Developer | iOS Swift SwiftUI Apps Chile</title>
+    <meta name="description" content="Indie mobile developer from Chile specializing in iOS Swift and SwiftUI applications. Available for freelance projects and app development consultation.">
+    <meta name="keywords" content="iOS developer, Swift developer, SwiftUI, mobile app development, indie developer, Chile, freelance developer, iPhone apps, mobile development">
+    <meta name="author" content="Rodrigo Oliva">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rodx.dev">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rodrigo Oliva - Indie Mobile Developer">
+    <meta property="og:description" content="Indie mobile developer from Chile specializing in iOS Swift and SwiftUI applications. Available for freelance projects and app development consultation.">
+    <meta property="og:url" content="https://rodx.dev">
+    <meta property="og:site_name" content="rodx.dev">
+    <meta property="og:image" content="https://rodx.dev/assets/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rodrigo Oliva - Indie Mobile Developer">
+    <meta name="twitter:description" content="Indie mobile developer from Chile specializing in iOS Swift and SwiftUI applications.">
+    <meta name="twitter:image" content="https://rodx.dev/assets/images/twitter-card.jpg">
+    <meta name="twitter:creator" content="@rodrigooliva">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#fe8019">
+    <meta name="msapplication-TileColor" content="#fe8019">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-theme="dark">
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark/light theme">
+        <span id="theme-text">☀️ Light</span>
+    </button>
+
+    <main class="container">
+        <div class="logo">
+            <div class="logo-text">
+                <span class="arrow">❯</span><span class="rodx">rodx</span><span class="dot">.</span><span class="dev">dev</span><span class="pipe">|</span>
+            </div>
+        </div>
+
+        <header class="intro">
+            <h1>Rodrigo Oliva</h1>
+            <p class="subtitle">
+                <span class="terminal-prompt">~/</span>
+                Indie Developer from Chile 🇨🇱
+            </p>
+            <div class="status-indicator">
+                <div class="status-dot" aria-hidden="true"></div>
+                Available for new projects
+            </div>
+        </header>
+
+        <section class="bio">
+            <h2>$ contact</h2>
+            <p>Have questions, feedback, or need support? Feel free to reach out anytime. I'm here to help!</p>
+            
+            <form class="contact-form" id="contact-form" aria-label="Contact form">
+                <div class="form-group">
+                    <label for="email"><span class="terminal-prompt">~/</span>email:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@domain.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject"><span class="terminal-prompt">~/</span>asunto:</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"><span class="terminal-prompt">~/</span>mensaje:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                </div>
+                
+                <!-- Honeypot field (hidden from users, visible to bots) -->
+                <input type="text" name="honeypot" style="display: none;">
+                
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="terminal-prompt">❯</span> <span id="btn-text">send --message</span>
+                </button>
+                
+                <div id="form-status" style="margin-top: 1rem; font-size: 0.9rem;" role="status" aria-live="polite"></div>
+            </form>
+        </section>
+
+        <nav class="links" aria-label="Social links">
+            <a href="https://linkedin.com/in/rodoliva" class="link-card linkedin" target="_blank" rel="noopener">
+                <div class="link-icon">💼</div>
+                <div class="link-title">LinkedIn</div>
+                <div class="link-subtitle">Professional network</div>
+            </a>
+
+            <a href="https://medium.com/@rolivagon" class="link-card medium" target="_blank" rel="noopener">
+                <div class="link-icon">📝</div>
+                <div class="link-title">Medium</div>
+                <div class="link-subtitle">Articles & insights</div>
+            </a>
+
+            <div class="link-card appstore disabled" aria-label="App Store - Coming soon">
+                <div class="link-icon">📱</div>
+                <div class="link-title">App Store</div>
+                <div class="link-subtitle">Coming soon...</div>
+            </div>
+        </nav>
+
+        <footer class="footer">
+            <span class="terminal-prompt">~/</span>
+            Built with ❤️ and lots of ☕ • © 2025 Rodrigo Oliva
+        </footer>
+    </main>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rodrigo Oliva",
+        "jobTitle": "Indie Mobile Developer",
+        "description": "Indie mobile developer from Chile specializing in iOS Swift and SwiftUI applications",
+        "url": "https://rodx.dev",
+        "image": "https://rodx.dev/assets/images/profile.jpg",
+        "sameAs": [
+            "https://linkedin.com/in/rodoliva",
+            "https://medium.com/@rolivagon"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "CL"
+        },
+        "knowsAbout": [
+            "iOS Development",
+            "Swift Programming",
+            "SwiftUI",
+            "Mobile App Development",
+            "iPhone Applications"
+        ],
+        "offers": {
+            "@type": "Service",
+            "serviceType": "Mobile App Development",
+            "description": "iOS app development using Swift and SwiftUI"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Professional",
+            "url": "https://rodx.dev#contact-form"
+        }
+    }
+    </script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
